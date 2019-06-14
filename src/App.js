@@ -20,7 +20,7 @@ class App extends Component {
   getPlaces = async place => {
     const baseUrl =
       process.env.NODE_ENV === 'production'
-        ? 'https://place-search-backend-demo.herokuapp.com/'
+        ? 'https://kenet-app.herokuapp.com/'
         : ''
     let response = await fetch(`${baseUrl}api/getLocations/`, {
       method: 'POST',
